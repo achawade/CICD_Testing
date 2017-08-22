@@ -141,7 +141,7 @@
         <serverUrl>${dev.serverUrl}</serverUrl>
         <user>${dev.user}</user>
         <password>${dev.password}</password>
-        <configplan>${scac.input.dir}dev_Project1_cfgplan.xml</configplan>
+        <configplan>${scac.input.dir}dev_${project.artifactId}_cfgplan.xml</configplan>
         <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
       </properties>
     </profile>
@@ -157,7 +157,7 @@
         <serverUrl>${test.serverUrl}</serverUrl>
         <user>${test.user}</user>
         <password>${test.password}</password>
-        <configplan>${scac.input.dir}test_Project1_cfgplan.xml</configplan>
+        <configplan>${scac.input.dir}test_${project.artifactId}_cfgplan.xml</configplan>
         <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
       </properties>
     </profile>
