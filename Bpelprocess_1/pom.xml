@@ -69,7 +69,7 @@
           <serverUrl>${serverUrl}</serverUrl>
           <user>${user}</user>
           <password>${password}</password>
-          <configplan>${project.artifactId}-${project.version}.xml</configplan>
+          <configplan>conf_${project.artifactId}-${project.version}.xml</configplan>
           <!-- Note: compositeRevision is needed to package, revision is needed to undeploy -->
           <compositeRevision>${composite.revision}</compositeRevision>
           <revision>${composite.revision}</revision>
