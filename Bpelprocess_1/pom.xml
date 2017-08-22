@@ -48,7 +48,7 @@
     <!-- These parameters are used by the test goal 
          if you are using the sca-test (test) goal, you need to uncomment the following
              line and point it to your jndi.properties file. -->
-    <!--<jndi.properties.input>UNDEFINED</jndi.properties.input>-->
+    <!--<jndi.properties.input>${project.basedir}/jndi.properties</jndi.properties.input>-->
     <scatest.result>${scac.output.dir}/testResult</scatest.result>
     <!--  input is the name of the composite to run test suties against -->
     <input>${project.artifactId}</input>
@@ -65,8 +65,7 @@
         <configuration>
           <compositeName>${project.artifactId}</compositeName>
           <composite>${scac.input}</composite>
-          <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${composite.revision}.jar</sarLocation>
-          <appHome>${project.basedir}/..</appHome>
+          <sarLocation>sca_${project.artifactId}-${project.version}.jar</sarLocation>
           <serverUrl>${serverUrl}</serverUrl>
           <user>${user}</user>
           <password>${password}</password>
@@ -75,6 +74,7 @@
           <compositeRevision>${composite.revision}</compositeRevision>
           <revision>${composite.revision}</revision>
           <scacInputDir>${scac.input.dir}</scacInputDir>
+          <appHome>${project.basedir}/..</appHome>
           <input>${input}</input>
         </configuration>
         <!-- extensions=true is needed to use the custom sar packaging type -->
@@ -92,7 +92,6 @@
             </goals>
             <configuration>
               <files>
-                <!--<file>${scac.input.dir}/Environment.properties</file>-->
                 <file>C:/Program Files (x86)/Jenkins/conf/Environment.properties</file>
               </files>
             </configuration>
