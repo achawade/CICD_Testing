@@ -29,6 +29,11 @@
         <artifactId>commons-lang</artifactId>
         <version>2.6</version>
     </dependency>
+           <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>lang</artifactId>
+        <version></version>
+    </dependency>
     <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
@@ -140,8 +145,6 @@
         </configuration>
       </plugin>
     </plugins>
-           <sourceDirectory>${project.basedir}/SOA/SCA-INF/src/</sourceDirectory>
-    <outputDirectory>${project.basedir}/SOA/SCA-INF/classes/</outputDirectory>
   </build>
   <repositories>
     <repository>
