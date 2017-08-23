@@ -25,7 +25,7 @@
   </parent>
          <dependencies>
     <dependency>
-        <groupId>commons-lang</groupId>
+        <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang</artifactId>
         <version>2.6</version>
     </dependency>
