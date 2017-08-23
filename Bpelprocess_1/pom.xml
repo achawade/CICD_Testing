@@ -120,7 +120,7 @@
       </plugin>
     </plugins>
   </build>
-  <repositories>
+  <!--<repositories>
     <repository>
       <id>thirdparty</id>
       <name></name>
@@ -147,7 +147,7 @@
       </snapshots>
       <layout>default</layout>
     </pluginRepository>
-  </pluginRepositories>
+  </pluginRepositories> -->
   <profiles>
     <profile>
       <id>serverConfig-dev</id>
