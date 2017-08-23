@@ -98,6 +98,26 @@
           </execution>
         </executions>
       </plugin>
+             <plugin>
+        <groupId>com.google.code.maven-replacer-plugin</groupId>
+        <artifactId>replacer</artifactId>
+        <version>1.5.2</version>
+        <executions>
+          <execution>
+            <phase>initialize</phase>
+            <goals>
+              <goal>replace</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <ignoreMissingFile>true</ignoreMissingFile>
+          <file>${scac.input}</file>
+          <xpath>//composite/@revision</xpath>
+          <token>^.*$</token>
+          <value>${composite.revision}</value>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <repositories>
