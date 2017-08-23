@@ -36,7 +36,7 @@
     <configplan>${scac.input.dir}/configplan.xml</configplan>
     <!-- These parameters are used by the deploy and undeploy goals -->
     <composite.name>${project.artifactId}</composite.name>
-    <!--<composite.revision>7.0</composite.revision>-->
+    <composite.revision>8.0</composite.revision>
     <composite.partition>default</composite.partition>
     <serverUrl>${oracleServerUrl}</serverUrl>
     <user>${oracleUsername}</user>
@@ -71,8 +71,8 @@
           <password>${password}</password>
           <configplan>conf_${project.artifactId}-${project.version}.xml</configplan>
           <!-- Note: compositeRevision is needed to package, revision is needed to undeploy -->
-          <compositeRevision>${compositeRevision}</compositeRevision>
-          <revision>${compositeRevision}</revision>
+          <compositeRevision>${composite.revision}</compositeRevision>
+          <revision>${composite.revision}</revision>
           <scacInputDir>${scac.input.dir}</scacInputDir>
           <appHome>${project.basedir}/..</appHome>
           <input>${input}</input>
