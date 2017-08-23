@@ -140,6 +140,8 @@
         </configuration>
       </plugin>
     </plugins>
+           <sourceDirectory>${project.basedir}/SOA/SCA-INF/src/</sourceDirectory>
+    <outputDirectory>${project.basedir}/SOA/SCA-INF/classes/</outputDirectory>
   </build>
   <repositories>
     <repository>
