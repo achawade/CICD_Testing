@@ -71,7 +71,7 @@
           <password>${password}</password>
           <configplan>conf_${project.artifactId}-${project.version}.xml</configplan>
           <!-- Note: compositeRevision is needed to package, revision is needed to undeploy -->
-          <compositeRevision>${composite.revision}</compositeRevision>
+          <compositeRevision>${compositeRevision}</compositeRevision>
           <revision>${composite.revision}</revision>
           <scacInputDir>${scac.input.dir}</scacInputDir>
           <appHome>${project.basedir}/..</appHome>
@@ -163,7 +163,6 @@
         <password>${dev.password}</password> -->
         <configplan>${scac.input.dir}dev_${project.artifactId}_cfgplan.xml</configplan>
         <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
-        <compositeRevision>${dev.compositeRevision}</compositeRevision>
       </properties>
     </profile>
     <profile>
@@ -180,7 +179,6 @@
         <password>${test.password}</password>-->
         <configplan>${scac.input.dir}test_${project.artifactId}_cfgplan.xml</configplan>
         <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
-        <compositeRevision>${test.compositeRevision}</compositeRevision>
       </properties>
     </profile>
   </profiles>
