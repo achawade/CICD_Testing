@@ -80,7 +80,7 @@
         <!-- extensions=true is needed to use the custom sar packaging type -->
         <extensions>true</extensions>
       </plugin>
-      <plugin>
+      <!--<plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>properties-maven-plugin</artifactId>
         <version>1.0.0</version>
@@ -97,7 +97,7 @@
             </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
              <!--<plugin>
         <groupId>com.google.code.maven-replacer-plugin</groupId>
         <artifactId>replacer</artifactId>
@@ -158,11 +158,12 @@
         </property>
       </activation>
       <properties>
-        <serverUrl>${dev.serverUrl}</serverUrl>
+        <!--<serverUrl>${dev.serverUrl}</serverUrl>
         <user>${dev.user}</user>
-        <password>${dev.password}</password>
+        <password>${dev.password}</password> -->
         <configplan>${scac.input.dir}dev_${project.artifactId}_cfgplan.xml</configplan>
         <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
+        <compositeRevision>${dev.compositeRevision}</compositeRevision>
       </properties>
     </profile>
     <profile>
@@ -174,11 +175,12 @@
         </property>
       </activation>
       <properties>
-        <serverUrl>${test.serverUrl}</serverUrl>
+        <!--<serverUrl>${test.serverUrl}</serverUrl>
         <user>${test.user}</user>
-        <password>${test.password}</password>
+        <password>${test.password}</password>-->
         <configplan>${scac.input.dir}test_${project.artifactId}_cfgplan.xml</configplan>
         <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
+        <compositeRevision>${test.compositeRevision}</compositeRevision>
       </properties>
     </profile>
   </profiles>
